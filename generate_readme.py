@@ -119,7 +119,7 @@ def main() -> None:
         url = repo_url(slug, repos)
         if url and slug and slug.lower() in repos:
             linked += 1
-            lines.append(f"| {num:03d} | [{title}]({url}) | {url} |")
+            lines.append(f"| {num:03d} | {title} | {url} |")
         elif url:
             lines.append(f"| {num:03d} | {title} | {url} |")
         else:
