@@ -8,7 +8,7 @@
 >
 > 提供 **免费配套软件下载 + 安装说明 + 部署教程**；支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。
 
-![vv毕设网 - 一键画图](./uml-draw.png)
+![vv毕设网 - 一键画图](https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/uml-draw.png)
 
 ## 项目列表
 
