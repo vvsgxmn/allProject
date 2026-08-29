@@ -6,21 +6,10 @@
 
 > **购买地址**：[https://www.vvxx.love](https://www.vvxx.love)（vv毕设网）
 >
-<<<<<<< HEAD
-> 支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。
->
-> 提供 **免费配套软件下载 + 安装说明 + 部署教程**
-=======
 > 提供 **免费配套软件下载 + 安装说明 + 部署教程**；支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。
->>>>>>> 4968405 (Link projects 31-36 to GitHub showcase repos.)
 
-![vv毕设网 - 一键画图](https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/uml-draw.png)
+![vv毕设网 - 一键画图](./uml-draw.png)
 
-<<<<<<< HEAD
-<img src="https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/image-20260825133349317.png" alt="image-20260825133349317" /> 
-
-=======
->>>>>>> 4968405 (Link projects 31-36 to GitHub showcase repos.)
 ## 项目列表
 
 | 序号 | 项目 | GitHub 地址 |
