@@ -6,14 +6,21 @@
 
 > **购买地址**：[https://www.vvxx.love](https://www.vvxx.love)（vv毕设网）
 >
+<<<<<<< HEAD
 > 支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。
 >
 > 提供 **免费配套软件下载 + 安装说明 + 部署教程**
+=======
+> 提供 **免费配套软件下载 + 安装说明 + 部署教程**；支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。
+>>>>>>> 4968405 (Link projects 31-36 to GitHub showcase repos.)
 
 ![vv毕设网 - 一键画图](https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/uml-draw.png)
 
+<<<<<<< HEAD
 <img src="https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/image-20260825133349317.png" alt="image-20260825133349317" /> 
 
+=======
+>>>>>>> 4968405 (Link projects 31-36 to GitHub showcase repos.)
 ## 项目列表
 
 | 序号 | 项目 | GitHub 地址 |
@@ -48,12 +55,12 @@
 | 028 | 基于 SpringBoot+Vue 的在线音乐平台系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/music-recommendation-system |
 | 029 | 基于 SpringBoot+Vue 的高校学生请假管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/student_leave_system |
 | 030 | 基于 SpringBoot+Vue 的图书管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/book-management-system |
-| 031 | 基于 SpringBoot+Vue 的高校宿舍管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
-| 032 | 基于 SpringBoot+Vue 的宠物健康管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
-| 033 | 基于 SpringBoot+Vue 的动物园综合管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
-| 034 | 基于 SpringBoot+Vue 的电影院购票选座系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
-| 035 | 基于 SpringBoot+Vue 的自习室座位预约管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
-| 036 | 基于 SpringBoot+Vue 的仓储WMS管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
+| 031 | 基于 SpringBoot+Vue 的高校宿舍管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/dormitory |
+| 032 | 基于 SpringBoot+Vue 的宠物健康管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/PetHealthy |
+| 033 | 基于 SpringBoot+Vue 的动物园综合管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/ZooManage |
+| 034 | 基于 SpringBoot+Vue 的电影院购票选座系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/CinemaSystem |
+| 035 | 基于 SpringBoot+Vue 的自习室座位预约管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/StudyRoomManage |
+| 036 | 基于 SpringBoot+Vue 的仓储WMS管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/WarehouseManage |
 | 037 | 基于 SpringBoot+Vue 的校园流浪宠物救助系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
 | 038 | 基于 SpringBoot+Vue 的校园二手市场交易系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
 | 039 | 基于 SpringBoot+Vue 的智能进销存管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
@@ -63,4 +70,4 @@
 
 ---
 
-共 **42** 个项目，已关联 GitHub **30** 个。
+共 **42** 个项目，已关联 GitHub **36** 个。
