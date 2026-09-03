@@ -54,10 +54,10 @@
 | 038 | 基于 SpringBoot+Vue 的校园二手市场交易系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/SecondHandMarket |
 | 039 | 基于 SpringBoot+Vue 的智能进销存管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/SmartPSI |
 | 040 | 基于 SpringBoot+Vue 的网上生鲜/超市商城系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/OnlineMart |
-| 041 | 基于 SpringBoot+Vue 的智能药品进销存管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
-| 042 | 基于 SpringBoot+Vue 的智慧医院门诊预约挂号系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | 待上传 |
+| 041 | 基于 SpringBoot+Vue 的智能药品进销存管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/DrugManagement |
+| 042 | 基于 SpringBoot+Vue 的智慧医院门诊预约挂号系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/HospitalRegistration |
 | 043 | 基于 SpringBoot+Vue 的鲜花商城系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://github.com/vvsgxmn/FlowerMall |
 
 ---
 
-共 **43** 个项目，已关联 GitHub **41** 个。
+共 **43** 个项目，已关联 GitHub **43** 个。
