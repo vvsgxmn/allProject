@@ -57,7 +57,9 @@
 | 041 | 基于 SpringBoot+Vue 的智能药品进销存管理系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/DrugManagement |
 | 042 | 基于 SpringBoot+Vue 的智慧医院门诊预约挂号系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/HospitalRegistration |
 | 043 | 基于 SpringBoot+Vue 的鲜花商城系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/FlowerMall |
+| 044 | 基于 SpringBoot+Vue 的校园跑腿系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/CampusErrand |
+| 045 | 基于 SpringBoot+Vue 的健身房预约系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/GymReservation |
 
 ---
 
-共 **43** 个项目，已关联 Gitee **43** 个。
+共 **45** 个项目，已关联 Gitee **45** 个。
