@@ -59,7 +59,8 @@
 | 043 | 基于 SpringBoot+Vue 的鲜花商城系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/FlowerMall |
 | 044 | 基于 SpringBoot+Vue 的校园跑腿系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/CampusErrand |
 | 045 | 基于 SpringBoot+Vue 的健身房预约系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/GymReservation |
+| 046 | 基于 SpringBoot+Vue 的房屋租赁系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/HouseRental |
 
 ---
 
-共 **45** 个项目，已关联 Gitee **45** 个。
+共 **46** 个项目，已关联 Gitee **46** 个。
