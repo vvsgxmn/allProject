@@ -62,7 +62,8 @@
 | 046 | 基于 SpringBoot+Vue 的房屋租赁系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/HouseRental |
 | 047 | 基于 SpringBoot+Vue 的招聘网站系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/RecruitmentSite |
 | 048 | 基于 SpringBoot+Vue 的体育馆预约系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/StadiumReservation |
+| 049 | 基于 SpringBoot+Vue 的校园论坛系统(源码+数据库+UML全套图+论文+答辩PPT+说明文档) | https://gitee.com/ccw-ccw/CampusForum |
 
 ---
 
-共 **48** 个项目，已关联 Gitee **48** 个。
+共 **49** 个项目，已关联 Gitee **49** 个。
