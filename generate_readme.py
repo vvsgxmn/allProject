@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """Generate allProject README.md using Gitee API and local project catalog."""
 
 from __future__ import annotations
@@ -50,12 +50,22 @@ PROJECTS = [
     (34, "电影院购票选座系统", "CinemaSystem", "SpringBoot+Vue"),
     (35, "自习室座位预约管理系统", "StudyRoomManage", "SpringBoot+Vue"),
     (36, "仓储WMS管理系统", "WarehouseManage", "SpringBoot+Vue"),
-    (37, "校园流浪宠物救助系统", None, "SpringBoot+Vue"),
-    (38, "校园二手市场交易系统", None, "SpringBoot+Vue"),
-    (39, "智能进销存管理系统", None, "SpringBoot+Vue"),
-    (40, "网上生鲜/超市商城系统", None, "SpringBoot+Vue"),
-    (41, "智能药品进销存管理系统", None, "SpringBoot+Vue"),
-    (42, "智慧医院门诊预约挂号系统", None, "SpringBoot+Vue"),
+    (37, "校园流浪宠物救助系统", "CampusPetRescue", "SpringBoot+Vue"),
+    (38, "校园二手市场交易系统", "SecondHandMarket", "SpringBoot+Vue"),
+    (39, "智能进销存管理系统", "SmartPSI", "SpringBoot+Vue"),
+    (40, "网上生鲜/超市商城系统", "OnlineMart", "SpringBoot+Vue"),
+    (41, "智能药品进销存管理系统", "DrugManagement", "SpringBoot+Vue"),
+    (42, "智慧医院门诊预约挂号系统", "HospitalRegistration", "SpringBoot+Vue"),
+    (43, "鲜花商城系统", "FlowerMall", "SpringBoot+Vue"),
+    (44, "校园跑腿系统", "CampusErrand", "SpringBoot+Vue"),
+    (45, "健身房预约系统", "GymReservation", "SpringBoot+Vue"),
+    (46, "房屋租赁系统", "HouseRental", "SpringBoot+Vue"),
+    (47, "招聘网站系统", "RecruitmentSite", "SpringBoot+Vue"),
+    (48, "体育馆预约系统", "StadiumReservation", "SpringBoot+Vue"),
+    (49, "校园论坛系统", "CampusForum", "SpringBoot+Vue"),
+    (50, "外卖点餐系统", "TakeoutOrder", "SpringBoot+Vue"),
+    (51, "养老院管理系统", "NursingHome", "SpringBoot+Vue"),
+    (52, "智慧停车场系统", "SmartParking", "SpringBoot+Vue"),
 ]
 
 
@@ -109,6 +119,12 @@ def main() -> None:
         "> 提供 **免费配套软件下载 + 安装说明 + 部署教程**；支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。",
         "",
         "![vv毕设网 - 一键画图](https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/uml-draw.png)",
+        "",
+        "## 仓库简介",
+        "",
+        "所有项目均为 **SpringBoot + Vue** 前后端分离毕设项目，当前共收录 **{}** 个：".format(len(PROJECTS)),
+        "",
+        "；".join(f"{num:02d}.{name}" for num, name, *_ in PROJECTS) + "。",
         "",
         "## 项目列表",
         "",
