@@ -66,11 +66,8 @@ PROJECTS = [
     (50, "外卖点餐系统", "TakeoutOrder", "SpringBoot+Vue"),
     (51, "养老院管理系统", "NursingHome", "SpringBoot+Vue"),
     (52, "智慧停车场系统", "SmartParking", "SpringBoot+Vue"),
-<<<<<<< Updated upstream
-=======
     (53, "文化遗产管理系统", "CulturalHeritage", "SpringBoot+Vue"),
     (54, "海洋文化科普网站", "MarineCulture", "SpringBoot+Vue"),
->>>>>>> Stashed changes
 ]
 
 
