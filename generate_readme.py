@@ -69,6 +69,7 @@ PROJECTS = [
     (53, "文化遗产管理系统", "CulturalHeritage", "SpringBoot+Vue"),
     (54, "海洋文化科普网站", "MarineCulture", "SpringBoot+Vue"),
     (55, "顺风车管理系统", "RideShare", "SpringBoot+Vue"),
+    (56, "服装售卖商城", "ClothingMall", "SpringBoot+Vue"),
 ]
 
 
