@@ -11,7 +11,8 @@ import urllib.parse
 GITEE_USER = os.environ.get("GITEE_USER", "ccw-ccw")
 GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
 
-PROJECT_TAGS = "源码+数据库+UML全套图+论文+答辩PPT+说明文档"
+# 表格标题不再拼接长尾交付物关键词，降低 Gitee「刷关键字」误判风险
+PROJECT_TAGS = ""
 
 PROJECTS = [
     (1, "智慧公交管理系统", "SmartBus", "SpringBoot+Vue"),
@@ -116,29 +117,24 @@ def main() -> None:
     lines = [
         "# 毕业设计项目合集",
         "",
-        f"> Gitee 主页：[https://gitee.com/{GITEE_USER}](https://gitee.com/{GITEE_USER})",
+        f"> 账号主页：[https://gitee.com/{GITEE_USER}](https://gitee.com/{GITEE_USER})",
         "",
-        "> 本仓库汇总 **SpringBoot + Vue** 系列毕业设计项目的 Gitee 地址，方便快速检索与访问。",
+        "> 本仓库仅作项目索引，收录 SpringBoot + Vue 前后端分离示例仓库地址。",
         "",
-        "> **购买地址**：[https://www.vvxx.love](https://www.vvxx.love)（vv毕设网）",
-        ">",
-        "> 提供 **免费配套软件下载 + 安装说明 + 部署教程**；支持 **一键生成 UML 图**：上传项目压缩包即可自动产出功能模块图、用例图、流程图、E-R 图、时序图等全套毕设图表。",
+        "> 站点：[https://www.vvxx.love](https://www.vvxx.love)",
         "",
-        "![vv毕设网 - 一键画图](https://fanhua-yingcai.oss-cn-shanghai.aliyuncs.com/uml-draw.png)",
+        "## 说明",
         "",
-        "## 仓库简介",
-        "",
-        "所有项目均为 **SpringBoot + Vue** 前后端分离毕设项目，当前共收录 **{}** 个：".format(len(PROJECTS)),
-        "",
-        "；".join(f"{num:02d}.{name}" for num, name, *_ in PROJECTS) + "。",
+        f"当前共收录 **{len(PROJECTS)}** 个项目，详见下表。",
         "",
         "## 项目列表",
         "",
-        "| 序号 | 项目 | Gitee 地址 |",
-        "| ---- | ---- | ---------- |",
+        "| 序号 | 项目 | 地址 |",
+        "| ---- | ---- | ---- |",
     ]
     for num, name, slug, stack in PROJECTS:
-        title = f"基于 {stack} 的{name}({PROJECT_TAGS})"
+        # 仅保留系统名，技术栈与交付物不在每行重复
+        title = name
         url = repo_url(slug, repos)
         if url and slug and slug.lower() in repos:
             linked += 1
@@ -147,7 +143,7 @@ def main() -> None:
             lines.append(f"| {num:03d} | {title} | {url} |")
         else:
             lines.append(f"| {num:03d} | {title} | 待上传 |")
-    lines.extend(["", "---", "", f"共 **{len(PROJECTS)}** 个项目，已关联 Gitee **{linked}** 个。"])
+    lines.extend(["", f"合计 {len(PROJECTS)} 个，已关联 {linked} 个。"])
     output = "\n".join(lines) + "\n"
     readme_path = os.path.join(os.path.dirname(__file__), "README.md")
     with open(readme_path, "w", encoding="utf-8", newline="\n") as f:
