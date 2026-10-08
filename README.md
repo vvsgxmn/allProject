@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **59** 个项目，详见下表。
+当前共收录 **60** 个项目，详见下表。
 
 ## 项目列表
 
@@ -73,5 +73,6 @@
 | 057 | 网约车出行系统 | https://gitee.com/ccw-ccw/CarHailing |
 | 058 | 教务系统 | https://gitee.com/ccw-ccw/EduAdmin |
 | 059 | 汽车租赁系统 | https://gitee.com/ccw-ccw/CarRental |
+| 060 | 报刊征订系统 | https://gitee.com/ccw-ccw/PressSub |
 
-合计 59 个，已关联 59 个。
+合计 60 个，已关联 60 个。
