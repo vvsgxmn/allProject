@@ -75,6 +75,7 @@ PROJECTS = [
     (58, "教务系统", "EduAdmin", "SpringBoot+Vue"),
     (59, "汽车租赁系统", "CarRental", "SpringBoot+Vue"),
     (60, "报刊征订系统", "PressSub", "SpringBoot+Vue"),
+    (61, "电器商城系统", "ApplianceMall", "SpringBoot+Vue"),
 ]
 
 
