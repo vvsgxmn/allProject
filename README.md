@@ -75,6 +75,6 @@
 | 059 | 汽车租赁系统 | https://gitee.com/ccw-ccw/CarRental |
 | 060 | 报刊征订系统 | https://gitee.com/ccw-ccw/PressSub |
 | 061 | 电器商城系统 | https://gitee.com/ccw-ccw/ApplianceMall |
-| 062 | 在线拍卖系统 | https://github.com/vvsgxmn/OnlineAuction |
+| 062 | 在线拍卖系统 | https://gitee.com/ccw-ccw/OnlineAuction |
 
-合计 62 个，已关联 0 个。
+合计 62 个，已关联 62 个。
