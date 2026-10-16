@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **58** 个项目，详见下表。
+当前共收录 **62** 个项目，详见下表。
 
 ## 项目列表
 
@@ -72,5 +72,9 @@
 | 056 | 服装售卖商城 | https://gitee.com/ccw-ccw/ClothingMall |
 | 057 | 网约车出行系统 | https://gitee.com/ccw-ccw/CarHailing |
 | 058 | 教务系统 | https://gitee.com/ccw-ccw/EduAdmin |
+| 059 | 汽车租赁系统 | https://gitee.com/ccw-ccw/CarRental |
+| 060 | 报刊征订系统 | https://gitee.com/ccw-ccw/PressSub |
+| 061 | 电器商城系统 | https://gitee.com/ccw-ccw/ApplianceMall |
+| 062 | 在线拍卖系统 | https://github.com/vvsgxmn/OnlineAuction |
 
-合计 58 个，已关联 58 个。
+合计 62 个，已关联 0 个。
