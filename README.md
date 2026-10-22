@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **63** 个项目，详见下表。
+当前共收录 **66** 个项目，详见下表。
 
 ## 项目列表
 
@@ -77,5 +77,8 @@
 | 061 | 电器商城系统 | https://gitee.com/ccw-ccw/ApplianceMall |
 | 062 | 在线拍卖系统 | https://gitee.com/ccw-ccw/OnlineAuction |
 | 063 | 垃圾分类系统 | https://gitee.com/ccw-ccw/WasteSort |
+| 064 | 档案管理系统 | https://gitee.com/ccw-ccw/ArchiveManage |
+| 065 | 游乐场购票系统 | https://gitee.com/ccw-ccw/ParkTicket |
+| 066 | 汽车零部件销售系统 | https://gitee.com/ccw-ccw/AutoParts |
 
-合计 63 个，已关联 63 个。
+合计 66 个，已关联 66 个。
