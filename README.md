@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **67** 个项目，详见下表。
+当前共收录 **68** 个项目，详见下表。
 
 ## 项目列表
 
@@ -81,5 +81,6 @@
 | 065 | 游乐场购票系统 | https://gitee.com/ccw-ccw/ParkTicket |
 | 066 | 汽车零部件销售系统 | https://gitee.com/ccw-ccw/AutoParts |
 | 067 | 博物馆管理系统 | https://gitee.com/ccw-ccw/MuseumManage |
+| 075 | 民宿管理系统 | https://gitee.com/ccw-ccw/HomestayManage |
 
-合计 67 个，已关联 67 个。
+合计 68 个，已关联 68 个。
