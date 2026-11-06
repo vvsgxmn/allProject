@@ -73,6 +73,19 @@ PROJECTS = [
     (56, "服装售卖商城", "ClothingMall", "SpringBoot+Vue"),
     (57, "网约车出行系统", "CarHailing", "SpringBoot+Vue"),
     (58, "教务系统", "EduAdmin", "SpringBoot+Vue"),
+    (59, "汽车租赁系统", "CarRental", "SpringBoot+Vue"),
+    (60, "报刊征订系统", "PressSub", "SpringBoot+Vue"),
+    (61, "电器商城系统", "ApplianceMall", "SpringBoot+Vue"),
+    (62, "在线拍卖系统", "OnlineAuction", "SpringBoot+Vue"),
+    (63, "垃圾分类系统", "WasteSort", "SpringBoot+Vue"),
+    (64, "档案管理系统", "ArchiveManage", "SpringBoot+Vue"),
+    (65, "游乐场购票系统", "ParkTicket", "SpringBoot+Vue"),
+    (66, "汽车零部件销售系统", "AutoParts", "SpringBoot+Vue"),
+    (67, "博物馆管理系统", "MuseumManage", "SpringBoot+Vue"),
+    (68, "少儿编程管理系统", "KidsCode", "SpringBoot+Vue"),
+    (69, "手办销售系统", "FigureShop", "SpringBoot+Vue"),
+    (70, "宠物洗护预约系统", "PetGrooming", "SpringBoot+Vue"),
+    (75, "民宿管理系统", "HomestayManage", "SpringBoot+Vue"),
 ]
 
 
