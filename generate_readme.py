@@ -1,18 +1,20 @@
 # -*- coding: utf-8 -*-
-"""Generate allProject README.md using Gitee API and local project catalog."""
-
-from __future__ import annotations
-
+"""Generate a platform-specific allProject index."""
+import argparse
+import ast
 import json
 import os
-import urllib.request
+from pathlib import Path
+import re
+import tempfile
 import urllib.parse
+import urllib.request
 
+ROOT = Path(__file__).resolve().parent
 GITEE_USER = os.environ.get("GITEE_USER", "ccw-ccw")
-GITEE_TOKEN = os.environ.get("GITEE_TOKEN", "")
-
-# 表格标题不再拼接长尾交付物关键词，降低 Gitee「刷关键字」误判风险
-PROJECT_TAGS = ""
+GITHUB_USER = os.environ.get("GITHUB_USER", "vvsgxmn")
+DEFAULT_PLATFORM = "github"
+GITHUB_SLUG_OVERRIDES = {}
 
 PROJECTS = [
     (1, "智慧公交管理系统", "SmartBus", "SpringBoot+Vue"),
@@ -88,82 +90,113 @@ PROJECTS = [
     (75, "民宿管理系统", "HomestayManage", "SpringBoot+Vue"),
 ]
 
+def request_json(url, headers=None):
+    req = urllib.request.Request(url, headers=headers or {})
+    try:
+        with urllib.request.urlopen(req, timeout=25) as response:
+            return json.load(response)
+    except urllib.error.HTTPError as exc:
+        raise SystemExit(f"{urllib.parse.urlsplit(url).hostname} API: HTTP {exc.code}") from None
 
-def fetch_repos() -> dict[str, str]:
-    if not GITEE_TOKEN:
-        return {}
-    repos: dict[str, str] = {}
-    page = 1
-    while True:
-        query = urllib.parse.urlencode({
-            "access_token": GITEE_TOKEN,
-            "affiliation": "owner",
-            "per_page": 100,
-            "page": page,
-        })
-        url = f"https://gitee.com/api/v5/user/repos?{query}"
-        with urllib.request.urlopen(url, timeout=30) as resp:
-            batch = json.loads(resp.read().decode("utf-8"))
-        if not batch:
-            break
+def fetch_repos(platform, owner):
+    rows = {}
+    if platform == "github":
+        token = os.environ.get("GITHUB_TOKEN")
+        headers = {"Accept": "application/vnd.github+json", "User-Agent": "allProject-index"}
+        if token:
+            headers["Authorization"] = "Bearer " + token
+    else:
+        token = os.environ.get("GITEE_TOKEN")
+        if not token:
+            raise SystemExit("Missing GITEE_TOKEN")
+    for page in range(1, 100):
+        if platform == "github":
+            query = urllib.parse.urlencode({"type": "owner", "per_page": 100, "page": page})
+            batch = request_json(f"https://api.github.com/users/{owner}/repos?{query}", headers)
+        else:
+            query = urllib.parse.urlencode({"access_token": token, "affiliation": "owner", "per_page": 100, "page": page})
+            batch = request_json(f"https://gitee.com/api/v5/user/repos?{query}")
+        if not isinstance(batch, list):
+            raise SystemExit(f"{platform}: unexpected API response")
         for repo in batch:
-            html_url = repo.get("html_url", "")
-            if html_url.endswith(".git"):
-                html_url = html_url[:-4]
-            repos[repo["path"].lower()] = html_url
-            repos[repo["name"].lower()] = html_url
+            if repo.get("private") is not False or (repo.get("owner") or {}).get("login", "").casefold() != owner.casefold():
+                continue
+            slug = repo.get("path") if platform == "gitee" else repo.get("name")
+            if slug:
+                rows[slug.casefold()] = slug
         if len(batch) < 100:
+            return rows
+    raise SystemExit(f"{platform}: pagination exceeded the expected repository count")
+
+def platform_slugs(platform):
+    mapping = dict(GITHUB_SLUG_OVERRIDES) if platform == "github" else {}
+    for path in (ROOT / "projects_git_map.json", ROOT.parent / "projects_git_map.json"):
+        if path.is_file():
+            mapping.update({int(item["num"]): item[platform] for item in json.loads(path.read_text(encoding="utf-8")) if item.get(platform)})
             break
-        page += 1
-    return repos
+    return mapping
 
-
-def repo_url(slug: str | None, repos: dict[str, str]) -> str | None:
-    if not slug:
-        return None
-    return repos.get(slug.lower()) or f"https://gitee.com/{GITEE_USER}/{slug}"
-
-
-def main() -> None:
-    repos = fetch_repos()
+def render(platform, owner, repositories):
+    host = {"github": "github.com", "gitee": "gitee.com"}[platform]
+    home = f"https://{host}/{owner}"
+    mapping = platform_slugs(platform)
     linked = 0
     lines = [
-        "# 毕业设计项目合集",
-        "",
-        f"> 账号主页：[https://gitee.com/{GITEE_USER}](https://gitee.com/{GITEE_USER})",
-        "",
-        "> 本仓库仅作项目索引，收录 SpringBoot + Vue 前后端分离示例仓库地址。",
-        "",
-        "> 站点：[https://www.vvxx.love](https://www.vvxx.love)",
-        "",
-        "## 说明",
-        "",
-        f"当前共收录 **{len(PROJECTS)}** 个项目，详见下表。",
-        "",
-        "## 项目列表",
-        "",
+        "# 毕业设计项目合集", "",
+        f"> 账号主页：[{home}]({home})", "",
+        "> 本仓库仅作项目索引，收录 SpringBoot + Vue 前后端分离示例仓库地址。", "",
+        "> 站点：[https://www.vvxx.love](https://www.vvxx.love)", "",
+        "## 说明", "",
+        f"当前共收录 **{len(PROJECTS)}** 个项目，详见下表。", "",
+        "## 项目列表", "",
         "| 序号 | 项目 | 地址 |",
         "| ---- | ---- | ---- |",
     ]
-    for num, name, slug, stack in PROJECTS:
-        # 仅保留系统名，技术栈与交付物不在每行重复
-        title = name
-        url = repo_url(slug, repos)
-        if url and slug and slug.lower() in repos:
+    for num, name, fallback, _stack in PROJECTS:
+        slug = mapping.get(num, fallback)
+        canonical = repositories.get(slug.casefold()) if slug else None
+        if canonical:
+            addr = f"{home}/{urllib.parse.quote(canonical, safe='-._')}"
             linked += 1
-            lines.append(f"| {num:03d} | {title} | {url} |")
-        elif url:
-            lines.append(f"| {num:03d} | {title} | {url} |")
         else:
-            lines.append(f"| {num:03d} | {title} | 待上传 |")
+            addr = "待上传"
+        lines.append(f"| {num:03d} | {name} | {addr} |")
     lines.extend(["", f"合计 {len(PROJECTS)} 个，已关联 {linked} 个。"])
     output = "\n".join(lines) + "\n"
-    readme_path = os.path.join(os.path.dirname(__file__), "README.md")
-    with open(readme_path, "w", encoding="utf-8", newline="\n") as f:
-        f.write(output)
-    print(f"Generated {readme_path}")
-    print(f"Linked {linked}/{len(PROJECTS)} projects")
+    validate(output, platform, owner)
+    return output, linked
 
+def validate(output, platform, owner):
+    forbidden = "gitee.com" if platform == "github" else "github.com"
+    home = f"https://{platform}.com/{owner}"
+    if forbidden in output.casefold() or f"账号主页：[{home}]({home})" not in output:
+        raise SystemExit(f"{platform}: index contains a cross-platform URL or incorrect account home")
+    for link in re.findall(r"(?m)^\|\s*\d+\s*\|[^|]+\|\s*(https?://[^\s|]+)", output):
+        if not link.startswith(home + "/"):
+            raise SystemExit(f"{platform}: project link has an unexpected owner or domain")
+
+def write_atomic(path, output):
+    path = Path(path).resolve()
+    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", newline="\n", dir=path.parent, prefix=".index-", suffix=".tmp", delete=False) as handle:
+        tmp = Path(handle.name)
+        handle.write(output)
+    try:
+        os.replace(tmp, path)
+    finally:
+        tmp.unlink(missing_ok=True)
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate one platform's allProject index")
+    parser.add_argument("--platform", choices=("gitee", "github"), default=DEFAULT_PLATFORM, required=DEFAULT_PLATFORM is None)
+    parser.add_argument("--out", type=Path)
+    args = parser.parse_args()
+    platform = args.platform
+    owner = GITHUB_USER if platform == "github" else GITEE_USER
+    output, linked = render(platform, owner, fetch_repos(platform, owner))
+    out = args.out or ROOT / ("README.github.md" if DEFAULT_PLATFORM is None and platform == "github" else "README.md")
+    write_atomic(out, output)
+    print(f"Generated {out}")
+    print(f"{platform}: Linked {linked}/{len(PROJECTS)} projects")
 
 if __name__ == "__main__":
     main()
