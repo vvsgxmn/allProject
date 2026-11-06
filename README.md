@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **70** 个项目，详见下表。
+当前共收录 **71** 个项目，详见下表。
 
 ## 项目列表
 
@@ -83,6 +83,7 @@
 | 067 | 博物馆管理系统 | https://gitee.com/ccw-ccw/MuseumManage |
 | 068 | 少儿编程管理系统 | https://gitee.com/ccw-ccw/KidsCode |
 | 069 | 手办销售系统 | https://gitee.com/ccw-ccw/FigureShop |
+| 070 | 宠物洗护预约系统 | https://gitee.com/ccw-ccw/PetGrooming |
 | 075 | 民宿管理系统 | https://gitee.com/ccw-ccw/HomestayManage |
 
-合计 70 个，已关联 70 个。
+合计 71 个，已关联 71 个。
