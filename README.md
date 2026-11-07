@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **73** 个项目，详见下表。
+当前共收录 **74** 个项目，详见下表。
 
 ## 项目列表
 
@@ -86,6 +86,7 @@
 | 070 | 宠物洗护预约系统 | https://github.com/vvsgxmn/PetGrooming |
 | 071 | 爱心众筹系统 | https://github.com/vvsgxmn/CharityCrowd |
 | 072 | 网咖管理系统 | https://github.com/vvsgxmn/NetCafe |
+| 073 | 实时热点新闻系统 | https://github.com/vvsgxmn/HotNews |
 | 075 | 民宿管理系统 | https://github.com/vvsgxmn/HomestayManage |
 
-合计 73 个，已关联 73 个。
+合计 74 个，已关联 74 个。
