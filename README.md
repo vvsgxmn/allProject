@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **72** 个项目，详见下表。
+当前共收录 **73** 个项目，详见下表。
 
 ## 项目列表
 
@@ -84,7 +84,8 @@
 | 068 | 少儿编程管理系统 | https://github.com/vvsgxmn/KidsCode |
 | 069 | 手办销售系统 | https://github.com/vvsgxmn/FigureShop |
 | 070 | 宠物洗护预约系统 | https://github.com/vvsgxmn/PetGrooming |
+| 071 | 爱心众筹系统 | https://github.com/vvsgxmn/CharityCrowd |
 | 072 | 网咖管理系统 | https://github.com/vvsgxmn/NetCafe |
 | 075 | 民宿管理系统 | https://github.com/vvsgxmn/HomestayManage |
 
-合计 72 个，已关联 72 个。
+合计 73 个，已关联 73 个。
