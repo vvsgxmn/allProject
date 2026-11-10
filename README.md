@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **75** 个项目，详见下表。
+当前共收录 **76** 个项目，详见下表。
 
 ## 项目列表
 
@@ -89,5 +89,6 @@
 | 073 | 实时热点新闻系统 | https://github.com/vvsgxmn/HotNews |
 | 074 | 实验室预约系统 | https://github.com/vvsgxmn/LabBooking |
 | 075 | 民宿管理系统 | https://github.com/vvsgxmn/HomestayManage |
+| 076 | 牙科诊所系统 | https://github.com/vvsgxmn/DentalClinic |
 
-合计 75 个，已关联 75 个。
+合计 76 个，已关联 76 个。
