@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **77** 个项目，详见下表。
+当前共收录 **78** 个项目，详见下表。
 
 ## 项目列表
 
@@ -90,6 +90,7 @@
 | 074 | 实验室预约系统 | https://github.com/vvsgxmn/LabBooking |
 | 075 | 民宿管理系统 | https://github.com/vvsgxmn/HomestayManage |
 | 076 | 牙科诊所系统 | https://github.com/vvsgxmn/DentalClinic |
+| 077 | 驾校管理系统 | https://github.com/vvsgxmn/DrivingSchool |
 | 080 | 文件共享系统 | https://github.com/vvsgxmn/FileSecurity |
 
-合计 77 个，已关联 77 个。
+合计 78 个，已关联 78 个。
