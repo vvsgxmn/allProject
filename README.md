@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **79** 个项目，详见下表。
+当前共收录 **80** 个项目，详见下表。
 
 ## 项目列表
 
@@ -92,6 +92,7 @@
 | 076 | 牙科诊所系统 | https://github.com/vvsgxmn/DentalClinic |
 | 077 | 驾校管理系统 | https://github.com/vvsgxmn/DrivingSchool |
 | 078 | 音乐会售票系统 | https://github.com/vvsgxmn/ConcertTicket |
+| 079 | 体育赛事售票系统 | https://github.com/vvsgxmn/SportsTicket |
 | 080 | 文件共享系统 | https://github.com/vvsgxmn/FileSecurity |
 
-合计 79 个，已关联 79 个。
+合计 80 个，已关联 80 个。
