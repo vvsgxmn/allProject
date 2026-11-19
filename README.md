@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **81** 个项目，详见下表。
+当前共收录 **82** 个项目，详见下表。
 
 ## 项目列表
 
@@ -95,5 +95,6 @@
 | 079 | 体育赛事售票系统 | https://github.com/vvsgxmn/SportsTicket |
 | 080 | 文件共享系统 | https://github.com/vvsgxmn/FileSecurity |
 | 081 | 校园共享雨伞系统 | https://github.com/vvsgxmn/CampusUmbrella |
+| 082 | 校园失物招领系统 | https://github.com/vvsgxmn/CampusLostFound |
 
-合计 81 个，已关联 81 个。
+合计 82 个，已关联 82 个。
