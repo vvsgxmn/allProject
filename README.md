@@ -102,3 +102,5 @@
 合计 84 个，已关联 84 个。
 
 <!-- index:084 GraduateDestination -->
+
+<!-- index:084 GraduateDestination fixed-msg -->
