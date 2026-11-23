@@ -100,3 +100,5 @@
 | 084 | 毕业生去向登记系统 | https://github.com/vvsgxmn/GraduateDestination |
 
 合计 84 个，已关联 84 个。
+
+<!-- index:084 GraduateDestination -->
