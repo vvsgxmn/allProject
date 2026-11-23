@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **83** 个项目，详见下表。
+当前共收录 **84** 个项目，详见下表。
 
 ## 项目列表
 
@@ -97,5 +97,6 @@
 | 081 | 校园共享雨伞系统 | https://github.com/vvsgxmn/CampusUmbrella |
 | 082 | 校园失物招领系统 | https://github.com/vvsgxmn/CampusLostFound |
 | 083 | 校园奖助学金申请系统 | https://github.com/vvsgxmn/CampusScholarship |
+| 084 | 毕业生去向登记系统 | https://github.com/vvsgxmn/GraduateDestination |
 
-合计 83 个，已关联 83 个。
+合计 84 个，已关联 84 个。
