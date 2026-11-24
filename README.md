@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **84** 个项目，详见下表。
+当前共收录 **85** 个项目，详见下表。
 
 ## 项目列表
 
@@ -98,9 +98,6 @@
 | 082 | 校园失物招领系统 | https://github.com/vvsgxmn/CampusLostFound |
 | 083 | 校园奖助学金申请系统 | https://github.com/vvsgxmn/CampusScholarship |
 | 084 | 毕业生去向登记系统 | https://github.com/vvsgxmn/GraduateDestination |
+| 085 | 学生竞赛管理系统 | https://github.com/vvsgxmn/StudentCompetition |
 
-合计 84 个，已关联 84 个。
-
-<!-- index:084 GraduateDestination -->
-
-<!-- index:084 GraduateDestination fixed-msg -->
+合计 85 个，已关联 85 个。
