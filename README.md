@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **85** 个项目，详见下表。
+当前共收录 **87** 个项目，详见下表。
 
 ## 项目列表
 
@@ -99,5 +99,7 @@
 | 083 | 校园奖助学金申请系统 | https://github.com/vvsgxmn/CampusScholarship |
 | 084 | 毕业生去向登记系统 | https://github.com/vvsgxmn/GraduateDestination |
 | 085 | 学生竞赛管理系统 | https://github.com/vvsgxmn/StudentCompetition |
+| 094 | 台球俱乐部管理系统 | https://github.com/vvsgxmn/BilliardClub |
+| 095 | 动物管护系统 | https://github.com/vvsgxmn/AnimalCare |
 
-合计 85 个，已关联 85 个。
+合计 87 个，已关联 87 个。
