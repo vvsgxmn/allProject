@@ -8,7 +8,7 @@
 
 ## 说明
 
-当前共收录 **87** 个项目，详见下表。
+当前共收录 **89** 个项目，详见下表。
 
 ## 项目列表
 
@@ -101,5 +101,7 @@
 | 085 | 学生竞赛管理系统 | https://github.com/vvsgxmn/StudentCompetition |
 | 094 | 台球俱乐部管理系统 | https://github.com/vvsgxmn/BilliardClub |
 | 095 | 动物管护系统 | https://github.com/vvsgxmn/AnimalCare |
+| 096 | 筷子物流管理系统 | https://github.com/vvsgxmn/ChopstickLogistics |
+| 097 | 婚纱摄影预约平台 | https://github.com/vvsgxmn/WeddingPhoto |
 
-合计 87 个，已关联 87 个。
+合计 89 个，已关联 89 个。
